@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>litlibrary</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>LitLibrary</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Welcome LitLibrary!</h2>
+            <h5>Praveen</h5>
+            <p>"LitLibrary" is a simple web application designed for managing a personal book collection. Users can view and manage books with ease through an intuitive interface. Initially, the application features a hidden placeholder book container. Users can add new books through a popup form, which includes fields for the book's title, author, and a short description.<br>"The best way to predict the future is to invent it."</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+<div class="popup-overlay"></div>
+<div class="popup-box">
+    <h2>Add Book</h2><br>
+    <form>
+        <input type="text" placeholder="Book Title" id="book-title-input">
+        <input type="text" placeholder="Book author" id="book-author-input">
+        <textarea placeholder="short description" id="book-description-input"></textarea>
+    <button id="add-book">ADD</button>
+    <button id="cancel-book">CANCEL</button>
+    </form>
+</div>
+
+
+<button class="add-button" id="add-button">+</button>
+
+    <script src="file.js"></script>
+</body>
+</html>
